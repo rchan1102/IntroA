@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Art Project 1</title>
+  </head>
+  <body>
+    <canvas id="myCanvas" style= "background: black"></canvas>
+    <script>
+      x=0;
+      y=0;
+      var maxX = prompt("What is your maximum width?");
+      var maxY = prompt("What is your maximum height?");
+      
+  
+       var canvas = document.getElementById("myCanvas");
+        canvas.width = maxX;
+        canvas.height = maxY;
+        canvas.style.border = "1px solid black";
+      var ctx = canvas.getContext("2d");
+      
+      
+      var ctx = canvas.getContext("2d");
+      ctx.fillStyle = "white";
+      ctx.fillRect(0,0,100,140);
+       
+       var ctx = canvas.getContext("2d");
+      ctx.fillStyle = "white";
+      ctx.fillRect(0,150,100,140);
+      
+       var ctx = canvas.getContext("2d");
+      ctx.fillStyle = "blue";
+      ctx.fillRect(0,300,100,140);
+      
+      var ctx = canvas.getContext("2d");
+      ctx.fillStyle = "red";
+      ctx.fillRect(110,0,290,290);
+      
+      var ctx = canvas.getContext("2d");
+      ctx.fillStyle = "white";
+      ctx.fillRect(110,300,260,100);
+      
+      var ctx = canvas.getContext("2d");
+      ctx.fillStyle = "white";
+      ctx.fillRect(380,300,20,45);
+      
+      var ctx = canvas.getContext("2d");
+      ctx.fillStyle = "red";
+      ctx.fillRect(380,355,20,45);
+      
+      
+      </script>
+  </body>
+</html>
