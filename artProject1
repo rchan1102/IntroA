@@ -9,8 +9,8 @@
     <script>
       x=0;
       y=0;
-      var maxX = prompt("What is your maximum width?");
-      var maxY = prompt("What is your maximum height?");
+      var maxX = 400;
+      var maxY = 400;
       
   
        var canvas = document.getElementById("myCanvas");
