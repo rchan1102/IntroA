@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Art Project 2</title>
+  </head>
+  <body>
+    <canvas id="myCanvas" style= "background: black"></canvas>
+    <script>
+      x=0;
+      y=0;
+      var maxX = parseInt(prompt("What is your maximum width?"));
+      var maxY = parseInt(prompt("What is your maximum height?"));
+      
+      
+      
+       var canvas = document.getElementById("myCanvas");
+        canvas.width = maxX;
+        canvas.height = maxY;
+        canvas.style.border = "1px solid black";
+      var ctx = canvas.getContext("2d");
+      
+      console.log(x,y);
+        ctx.beginPath();
+        ctx.fillStyle = "white";
+        ctx.fillRect(x,y, maxX * .25, maxY *.35);
+        
+        ctx.beginPath();
+        ctx.fillStyle = "white";
+        ctx.fillRect(x,maxY *.375, maxX * .25, maxY *.35);
+        
+        ctx.beginPath();
+        ctx.fillStyle = "blue";
+        ctx.fillRect(x,maxY *.75, maxX * .25, maxY *.25);
+        
+        ctx.beginPath();
+        ctx.fillStyle = "red";
+        ctx.fillRect(maxX * 0.275, y, maxX * 0.725, maxY *0.725);
+         
+        ctx.beginPath();
+        ctx.lineWidth=10;
+        ctx.fillStyle = "white";
+        ctx.fillRect(maxX * 0.275,maxY * .75, maxX * .65, maxY *.25);
+        
+        ctx.beginPath();
+        ctx.fillStyle = "white";
+        ctx.fillRect(maxX * 0.95,maxY * .75, maxX * .05, maxY *0.1125 );
+        
+        ctx.beginPath();
+        ctx.fillStyle = "yellow";
+        ctx.fillRect(maxX * 0.95,maxY * 0.8875, maxX * .05, maxY *0.1125);
+      
+      
+      
+    </script>
+  </body>
+</html>
